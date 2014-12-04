@@ -18,7 +18,7 @@ package com.aem.adobe.training.core;
 import aQute.bnd.annotation.ConsumerType;
 
 /**    hello
- * A simple service interface
+ * A simple service interfacenbvbnnb
  */
 @ConsumerType
 public interface HelloService {

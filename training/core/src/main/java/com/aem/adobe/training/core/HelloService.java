@@ -17,7 +17,7 @@ package com.aem.adobe.training.core;
 
 import aQute.bnd.annotation.ConsumerType;
 
-/** 
+/**    
  * A simple service interface
  */
 @ConsumerType

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="com.aem.adobe.training.core.impl.HelloServiceImpl">
+        <implementation class="com.aem.adobe.training.core.impl.HelloServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.aem.adobe.training.core.HelloService"/>
+        </service>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.aem.adobe.training.core.impl.HelloServiceImpl"/>
+        <reference name="settings" interface="org.apache.sling.settings.SlingSettingsService" cardinality="1..1" policy="static" bind="bindSettings" unbind="unbindSettings"/>
+    </scr:component>
+</components>

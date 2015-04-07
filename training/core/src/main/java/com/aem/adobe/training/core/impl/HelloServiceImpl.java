@@ -19,23 +19,24 @@ import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.settings.SlingSettingsService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.aem.adobe.training.core.HelloService;
 
-/**
- * One implementation of the {@link HelloService}. Note that
- * the settings service is injected, not retrieved.
- */
 @Service(value = HelloService.class)
 @Component(immediate = true)
 public class HelloServiceImpl implements HelloService {
 
+	Logger log = LoggerFactory.getLogger(this.getClass());
+	
 	@Reference
 	private SlingSettingsService settings;
 	
 	@Override
 	public String getMessage() {
-		return "Hello World, this is instance " + settings.getSlingId();
+		log.info("piyush in hello world service...");
+		return "piyush" + settings.getSlingId();
 	}
 
 }

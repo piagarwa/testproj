@@ -46,12 +46,6 @@ public class TestHelloServiceImpl {
 		when(settings.getSlingId()).thenReturn(slingId);
 	}
 	
-	@Test
-	public void testGetMessage() throws Exception {
-		// some very basic junit tests
-		String msg = helloService.getMessage();
-		assertNotNull(msg);
-		assertTrue(msg.length()>0);
-	}
+
 
 }

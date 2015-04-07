@@ -1,0 +1,19 @@
+Subject:  Event Approval 
+
+<div style="font-size: 12px; font-weight: normal; color: #000000; font-family:Arial,Helvetica,Verdana,sans-serif;">
+
+Dear ${firstName},
+ 
+A new event have been published. Click <a href="${eventUrl}">here </a> to view the new event details. Fill the approval form for necessary actions by clicking <a href="${approvalLink}" >here </a> 
+
+Regards,
+System Administrator
+
+
+
+
+
+-------------------------------------------------------
+This email has been sent by electronic mail.  Please do not reply to this email.  
+
+<div>

@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1417715536551
-Build-Jdk: 1.7.0_55
-Built-By: smann
+Bnd-LastModified: 1505020000666
+Build-Jdk: 1.8.0_141
+Built-By: Piyush
 Bundle-Description: Bundles for Integration Tests for training
 Bundle-ManifestVersion: 2
 Bundle-Name: training - Integration Tests Bundles
@@ -11,7 +11,6 @@ Created-By: Apache Maven Bundle Plugin
 Import-Package: com.aem.adobe.training.core;version="[1.0,2)",org.apache
  .sling.junit.annotations;version="[1.0,2)",org.apache.sling.settings;ve
  rsion="[1.3,2)",org.junit,org.junit.runner
-Originally-Created-By: Apache Maven Bundle Plugin
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
 Sling-Test-Regexp: .*Test
 Tool: Bnd-2.3.0.201405100607

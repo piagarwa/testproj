@@ -4,10 +4,11 @@
         <service servicefactory="false">
             <provide interface="javax.servlet.Servlet"/>
         </service>
-        <property name="sling.servlet.resourceTypes">
-            training/pages/homepage
+        <property name="sling.servlet.paths">
+            /bin/helloworld
         </property>
         <property name="service.vendor" value="Adobe"/>
         <property name="service.pid" value="com.aem.adobe.training.core.impl.servlets.SimpleServlet"/>
+        <reference name="helloService" interface="com.aem.adobe.training.core.SearchService" cardinality="1..1" policy="static" bind="bindHelloService" unbind="unbindHelloService"/>
     </scr:component>
 </components>

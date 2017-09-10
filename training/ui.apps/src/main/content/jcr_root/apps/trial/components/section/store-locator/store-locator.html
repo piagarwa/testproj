@@ -1,0 +1,12 @@
+<sly data-sly-test="${wcmmode.edit && !properties.heading}">
+Please author the component
+</sly>
+
+<h4>${properties.heading}</h4>
+<pre>
+${properties.address}
+${properties.contact}
+${properties.text @ context='html'}
+
+</pre>
+</article>

@@ -1,0 +1,16 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design || wcmmode.preview}"
+data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientLib.js @ categories='cq.shared'}" />
+
+<body>
+<sly data-sly-include="heading.html" />
+<section>
+<sly data-sly-include="about.html"  /> 
+<sly data-sly-include= "article.html" />
+</section>
+<sly data-sly-include="aside.html" />
+<div style="clear:both;"> </div>
+<sly data-sly-include="footer.html" />   
+
+
+   
